@@ -15,11 +15,10 @@ function bubbleSort(array) {
 }
 // 두번째 방법 어차피 맨뒤에 제일 큰 숫자가 오니까 한 번 돌면 맨 뒤 숫자는 비교를 안해도 되게
 function bubbleSort(array) {
-  let temp = 0;
   for (let i = 0; i < array.length - 1; i++) {
     for (let j = 0; j < array.length - 1 - i; j++) {
       if (array[j] > array[j + 1]) {
-        temp = array[j];
+        let temp = array[j];
         array[j] = array[j + 1];
         array[j + 1] = temp;
       }
