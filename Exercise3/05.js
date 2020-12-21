@@ -5,7 +5,7 @@ let todos = [
 ];
 
 function removeTodo(id) {
-  todos = todos.filter(v => v.id !== id);
+  todos = todos.filter(todo => todo.id !== id);
 }
 
 removeTodo(2);

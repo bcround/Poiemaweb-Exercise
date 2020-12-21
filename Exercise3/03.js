@@ -5,7 +5,7 @@ const todos = [
 ];
 
 function sortBy(key) {
-  return todos.slice().sort((a, b) => a[key] > b[key] ? 1 : (a[key] < b[key] ? -1 : 0));
+  return todos.slice().sort((todo1, todo2) => todo1[key] > todo2[key] ? 1 : (todo1[key] < todo2[key] ? -1 : 0));
   // return [...todos].sort((a, b) => a[key] > b[key] ? 1 : (a[key] < b[key] ? -1 : 0));
 }
 
