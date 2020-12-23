@@ -6,10 +6,11 @@ let todos = [
 
 // 나중에 스프레드 문법 배우면 다시 풀어볼 것.
 function toggleCompletedById(id) {
-  todos = todos.map(todo => {
-    if (todo.id === id) todo.completed = !todo.completed;
-    return todo;
-  });
+  todos = todos.map(todo => 
+    // if (todo.id === id) todo.completed = !todo.completed;
+    // return todo;
+    todo.id === id ? { ...todo, ...{ completed: !todo.completed } } : todo
+  );
 }
 
 toggleCompletedById(2);
