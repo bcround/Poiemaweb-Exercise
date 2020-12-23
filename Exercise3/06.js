@@ -10,6 +10,7 @@ function toggleCompletedById(id) {
     // if (todo.id === id) todo.completed = !todo.completed;
     // return todo;
     todo.id === id ? { ...todo, ...{ completed: !todo.completed } } : todo
+    // todo.id === id ? Object.assign({}, todo, { completed: !todo.completed }) : todo
   );
 }
 

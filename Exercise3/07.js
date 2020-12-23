@@ -10,6 +10,7 @@ function toggleCompletedAll() {
     // if (!todo.completed) todo.completed = !todo.completed;
     // return todo;
     !todo.completed ? { ...todo, ...{ completed: !todo.completed } } : todo
+    // !todo.completed ? Object.assign({}, todo, { completed: !todo.completed }) : todo
   )
 }
 
