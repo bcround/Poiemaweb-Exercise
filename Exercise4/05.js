@@ -11,7 +11,7 @@ toWeirdCase함수는 문자열을 인수로 전달받는다.
 */
 
 function toWeirdCase(s) {
-  if (s === undefined || s === '') return '';
+  if (!s) return '';
   s = s.toLowerCase();
 
   const strings = s.split(' ');

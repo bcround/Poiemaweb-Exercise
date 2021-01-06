@@ -9,9 +9,11 @@ n이 임의의 정수 x의 제곱이 아니라면 ‘no’를 리턴하는 함�
 */
 
 function nextSqaure(n){
+  const sqrtNum = Math.sqrt(n);
+
   if (n === undefined) return 'no';
 
-  return Number.isInteger(Math.sqrt(n))? (Math.sqrt(n) + 1) ** 2 : 'no';
+  return Number.isInteger(sqrtNum)? (sqrtNum + 1) ** 2 : 'no';
 }
 
 console.log(nextSqaure());    // no

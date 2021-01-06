@@ -11,7 +11,7 @@ function numPY(s) {
   let pCount = 0;
   let yCount = 0;
 
-  if (s === undefined || s === '') return true;
+  if (!s) return true;
   s = s.toLowerCase();
 
   if (!s.includes('p') && !s.includes('y')) return true;

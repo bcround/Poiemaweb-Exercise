@@ -8,10 +8,25 @@
 예를 들어 n = 3이라면 2를 반환한다.
 */
 
+// function fibonacci(n) {
+//   if (n === 0) return 0;
+//   if (n === 1) return 1;
+//   return fibonacci(n - 1) + fibonacci(n - 2);
+// }
+
 function fibonacci(n) {
-  if (n === 0) return 0;
-  if (n === 1) return 1;
-  return fibonacci(n - 1) + fibonacci(n - 2);
+  let res = [0, 1];
+  let ans;
+
+  for (let i = 0; i < res.length; i++) {
+    if (n === res.length) {
+      ans = res[n - 1] + res[n - 2];
+      break;
+    }
+    res.push(res[i] + res[i + 1]);
+  }
+
+  return ans;
 }
 
 console.log(fibonacci(2)); // 1
@@ -19,3 +34,5 @@ console.log(fibonacci(3)); // 2
 console.log(fibonacci(4)); // 3
 console.log(fibonacci(5)); // 5
 console.log(fibonacci(6)); // 8
+console.log(fibonacci(1000));
+console.log(fibonacci(6));

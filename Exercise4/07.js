@@ -8,7 +8,7 @@ str은 부호(+,-)와 숫자로만 구성되어 있고, 잘못된 값이 입력�
 */
 
 function strToInt(str) {
-  return parseInt(str);
+  return +str;
 }
 
 console.log(strToInt('1234'));  // 1234

@@ -5,10 +5,10 @@
 */
 
 function generateRange(from, to) {
-  const res = [];
+  let res = [];
 
   for (let i = from; i <= to; i++) {
-    res.push(i);
+    res = [...res, i];
   }
   
   return res;
