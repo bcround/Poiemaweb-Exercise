@@ -7,7 +7,7 @@
 
 function getCurrentWeek() {
   let currentWeekDate = [];
-  const today = new Date(2021,0,1);
+  const today = new Date();
   let weekStartDay = new Date(today - 86400000 * today.getDay());
 
   for (let i = 0; i < 7; i++) {
